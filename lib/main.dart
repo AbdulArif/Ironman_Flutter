@@ -25,7 +25,12 @@ class HomeActivity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("IronMan"),
+        centerTitle: true,
+        elevation: 6,
+        backgroundColor: Colors.blue,
+      ),
       body: const Text("Hello"),
     );
   }
