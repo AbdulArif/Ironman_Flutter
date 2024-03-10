@@ -67,7 +67,14 @@ MySnackbar(message, context){
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(child: Text("Arif")),
+            DrawerHeader(
+              padding: EdgeInsets.all(0),
+                child: UserAccountsDrawerHeader(
+             decoration: BoxDecoration(color: Colors.blue),
+              accountName: Text("Abdul Arif"),
+              accountEmail:Text("testemail@gmail.com") ,
+                  currentAccountPicture: Image.network('https://avatars.githubusercontent.com/u/37336255?v=4'),
+            )),
             ListTile(
         leading: Icon(Icons.home),
     title: Text("Home"),
